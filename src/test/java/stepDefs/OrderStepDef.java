@@ -56,11 +56,11 @@ public class OrderStepDef {
     public void user_do_checkout() {
     	cartPage.checkoutitems();
     }
-//    @Then("Should navigate to Checkout page")
-//     public void should_navigate_to_checkout_page() {
-//    	chkoutPage.provideDetails("Test","User","34343");
-//    	chkoutPage.checkoutOrder();
-//    	Assert.assertTrue(chkoutPage.isOrderSuccess());
+    @Then("Should navigate to Checkout page")
+     public void should_navigate_to_checkout_page() {
+    	chkoutPage.provideDetails("Test","User","34343");
+    	chkoutPage.checkoutOrder();
+    	Assert.assertTrue(chkoutPage.isOrderSuccess());
     	
-//    }
+    }
 }
