@@ -19,7 +19,6 @@ public class OrderStepDef {
 	CartPage cartPage;
 	CheckoutPage chkoutPage;
 	
-	
 	public OrderStepDef() {
 		loginPage = new LoginPage(driver);
 		listPage = new ProductListPage(driver);
@@ -46,8 +45,7 @@ public class OrderStepDef {
     public void item_must_be_added() {
     	listPage.viewCart();
     	Assert.assertTrue(cartPage.isItemAdded());
-    }
-    
+    }  
     @Given("User is on cart page")
     public void user_is_on_cart_page() {
     	listPage.viewCart();        
@@ -60,7 +58,6 @@ public class OrderStepDef {
      public void should_navigate_to_checkout_page() {
     	chkoutPage.provideDetails("Test","User","34343");
     	chkoutPage.checkoutOrder();
-    	Assert.assertTrue(chkoutPage.isOrderSuccess());
-    	
+    	Assert.assertTrue(chkoutPage.isOrderSuccess()); 	
     }
 }

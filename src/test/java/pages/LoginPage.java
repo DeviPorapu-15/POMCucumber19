@@ -24,5 +24,4 @@ public class LoginPage {
 		pwd.sendKeys(strPwd);
 		loginBtn.click();
 	}
-
 }

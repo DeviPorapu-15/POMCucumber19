@@ -17,13 +17,11 @@ public class CartPage {
 	
 	@FindBy(css = "button[data-test = 'checkout']")
 	WebElement chkoutBtn;
-	
 //	Actions
 //	verify element id added
 //	Remove item
 //	continue shopping
-//	checkout
-	
+//	checkout	
 	public CartPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
@@ -32,8 +30,7 @@ public class CartPage {
 		}
 		public void checkoutitems() {
 			chkoutBtn.click();
-		}
-		
+		}	
 	}
 
 

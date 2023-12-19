@@ -36,34 +36,20 @@ public class CheckoutPage {
 	public CheckoutPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
-	
-	
-
 		public void provideDetails(String firstName, String secondName, String pinCode ) {
 			// TODO Auto-generated method stub
 			FirstName.sendKeys(firstName);
 			LastName.sendKeys(secondName);
-			PinCode.sendKeys(pinCode);
-			
+			PinCode.sendKeys(pinCode);			
 		}
-
 		public void checkoutOrder() {
 			// TODO Auto-generated method stub
 			conBtn.click();
 		}
-		
-	
-
-
-
 		public boolean isOrderSuccess() {
-			// TODO Auto-generated method stub
-			
+			// TODO Auto-generated method stub	
 			finish.click();
 		    Assert.assertEquals(success.getText(),"Thank you for your order!" );
-			return true;
-			   
-			
+			return true;		
 		}
-
 }

@@ -14,7 +14,7 @@ public class ProductListPage {
 	
     @FindBy(id= "shopping_cart_container")
     WebElement cartIcon;
-    
+ 
     @FindBy(xpath="//span[contains(text(), 'Products')]")
     		WebElement productsTitle;
 //    ACTION
